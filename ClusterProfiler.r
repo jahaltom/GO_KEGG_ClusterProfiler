@@ -5,7 +5,7 @@ library(ggridges)
 library(ggupset)
 library(pathview)
 library(filesstrings)
-library(EnrichmentBrowser)
+
 ########GO#########
 
 # SET THE DESIRED ORGANISM HERE
