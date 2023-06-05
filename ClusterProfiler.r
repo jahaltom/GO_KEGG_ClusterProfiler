@@ -185,7 +185,66 @@ for (i in 1:length(linn)){
     # Produce the native KEGG plot (PNG)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id=kk2$ID[2], species = kegg_organism)
     
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00190", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01100",out.suffix="Metabolic pathways", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01230",out.suffix="Biosynthesis of amino acids", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01232",out.suffix="Nucleotide metabolism", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00010",out.suffix="Glycolysis / Gluconeogenesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00020",out.suffix="Citrate cycle (TCA cycle)", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00520",out.suffix="Amino sugar and nucleotide sugar metabolism", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00620",out.suffix="Pyruvate metabolism", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00061",out.suffix="Fatty acid biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00062",out.suffix="Fatty acid elongation", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00071",out.suffix="Fatty acid degradation", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01040",out.suffix="Biosynthesis of unsaturated fatty acids", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00230",out.suffix="Purine metabolism", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00240",out.suffix="Pyrimidine metabolism", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00290",out.suffix="Valine, leucine and isoleucine biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00300",out.suffix="Lysine biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00400",out.suffix="Phenylalanine, tyrosine and tryptophan biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00510",out.suffix="N-Glycan biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00513",out.suffix="Various types of N-glycan biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00512",out.suffix="Mucin type O-glycan biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00515",out.suffix="Mannose type O-glycan biosynthesi", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03020",out.suffix="RNA polymerase", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03022",out.suffix="Basal transcription factors", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03040",out.suffix="Spliceosome", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03010",out.suffix="Ribosome", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00970",out.suffix="Aminoacyl-tRNA biosynthesis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03013",out.suffix="Nucleocytoplasmic transport", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03015",out.suffix="mRNA surveillance pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03008",out.suffix="Ribosome biogenesis in eukaryotes", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03060",out.suffix="Protein export", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04141",out.suffix="Protein processing in endoplasmic reticulum", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03262",out.suffix="Virion - Coronavirus New!", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa02010",out.suffix="ABC transporters", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa02060",out.suffix="Phosphotransferase system (PTS)", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04010",out.suffix="MAPK signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04630",out.suffix="JAK-STAT signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04064",out.suffix="NF-kappa B signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04668",out.suffix="TNF signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04066",out.suffix="HIF-1 signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04151",out.suffix="PI3K-Akt signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04152",out.suffix="AMPK signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04150",out.suffix="mTOR signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04061",out.suffix="Viral protein interaction with cytokine and cytokine receptor", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04144",out.suffix="Endocytosis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04145",out.suffix="Phagosome", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04142",out.suffix="Lysosome", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04146",out.suffix="Peroxisome", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04140",out.suffix="Autophagy - animal", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04137",out.suffix="Mitophagy - animal", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04210",out.suffix="Apoptosis", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04620",out.suffix="Toll-like receptor signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04621",out.suffix="NOD-like receptor signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04622",out.suffix="RIG-I-like receptor signaling pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa04623",out.suffix="Cytosolic DNA-sensing pathway", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa05171",out.suffix="Coronavirus disease - COVID-19", species = kegg_organism)
+
+
+    
+    
+    
+    
     
     files=list.files(pattern = "*hsa*")
     for (i in files){
@@ -195,10 +254,3 @@ for (i in 1:length(linn)){
 
 }
 close(conn)   
-
-
-
-
-
-
-
