@@ -178,34 +178,35 @@ for (i in 1:length(linn)){
     #All KEGG Pathways
     #https://www.genome.jp/kegg/pathway.html
     
-    # Produce the native KEGG plot (PNG)
+    # Produce the 1st  native KEGG plot (PNG)
      
     dme <-pathview(gene.data=kegg_gene_list, pathway.id=kk2$ID[1], species = kegg_organism)
  
     
-    # Produce the native KEGG plot (PNG)
+    # Produce the 2nd  native KEGG plot (PNG)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id=kk2$ID[2], species = kegg_organism)
     
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01100",out.suffix="Metabolic pathways", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01230",out.suffix="Biosynthesis of amino acids", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01232",out.suffix="Nucleotide metabolism", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00010",out.suffix="Glycolysis / Gluconeogenesis", species = kegg_organism)
+    #A bunch of mis KEGG plots
+    #dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01100", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01230",out.suffix="Biosynthesis of amino acids", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01232",out.suffix="Nucleotide metabolism", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00010",out.suffix="Glycolysis Gluconeogenesis", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00020",out.suffix="Citrate cycle (TCA cycle)", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00520",out.suffix="Amino sugar and nucleotide sugar metabolism", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00620",out.suffix="Pyruvate metabolism", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00061",out.suffix="Fatty acid biosynthesis", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00062",out.suffix="Fatty acid elongation", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00071",out.suffix="Fatty acid degradation", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01040",out.suffix="Biosynthesis of unsaturated fatty acids", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01040",out.suffix="Biosynthesis of unsaturated fatty acids", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00230",out.suffix="Purine metabolism", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00240",out.suffix="Pyrimidine metabolism", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00290",out.suffix="Valine, leucine and isoleucine biosynthesis", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00300",out.suffix="Lysine biosynthesis", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00400",out.suffix="Phenylalanine, tyrosine and tryptophan biosynthesis", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00510",out.suffix="N-Glycan biosynthesis", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00513",out.suffix="Various types of N-glycan biosynthesis", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00512",out.suffix="Mucin type O-glycan biosynthesis", species = kegg_organism)
-    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00515",out.suffix="Mannose type O-glycan biosynthesi", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00510",out.suffix="N-Glycan biosynthesis", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00513",out.suffix="Various types of N-glycan biosynthesis", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00512",out.suffix="Mucin type O-glycan biosynthesis", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00515",out.suffix="Mannose type O-glycan biosynthesi", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03020",out.suffix="RNA polymerase", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03022",out.suffix="Basal transcription factors", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa03040",out.suffix="Spliceosome", species = kegg_organism)
