@@ -187,7 +187,7 @@ for (i in 1:length(linn)){
     dme <- pathview(gene.data=kegg_gene_list, pathway.id=kk2$ID[2], species = kegg_organism)
     
     #A bunch of mis KEGG plots
-    #dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01100", species = kegg_organism)
+    dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01100", species = kegg_organism)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01230",out.suffix="Biosynthesis of amino acids", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa01232",out.suffix="Nucleotide metabolism", species = kegg_organism,kegg.native=FALSE,same.layer=FALSE)
     dme <- pathview(gene.data=kegg_gene_list, pathway.id="hsa00010",out.suffix="Glycolysis Gluconeogenesis", species = kegg_organism)
