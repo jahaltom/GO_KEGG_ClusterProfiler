@@ -7,4 +7,4 @@
 
 module load R
 
-Rscript script.r
+Rscript ClusterProfiler.r
