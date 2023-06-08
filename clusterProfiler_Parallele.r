@@ -17,7 +17,7 @@ library(organism, character.only = TRUE)
 
 
 f="FOLDER"
-
+print(f)
 
 
 
