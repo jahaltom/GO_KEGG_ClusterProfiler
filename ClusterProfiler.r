@@ -10,7 +10,7 @@ library(filesstrings)
 
 # SET THE DESIRED ORGANISM HERE
 organism = "org.Hs.eg.db"
-BiocManager::install(organism, character.only = TRUE)
+BiocManager::install(organism, character.only = TRUE,ask=FALSE)
 library(organism, character.only = TRUE)
 
 
