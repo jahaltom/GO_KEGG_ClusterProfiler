@@ -14,7 +14,7 @@ BiocManager::install(organism, character.only = TRUE)
 library(organism, character.only = TRUE)
 
 
-fileName <- "list"
+fileName <- "OrigList"
 conn <- file(fileName,open="r")
 linn <-readLines(conn)
 for (i in 1:length(linn)){
@@ -28,7 +28,13 @@ for (i in 1:length(linn)){
     #Subset sig
     #df=df[ which(df$pvalue <= 0.05), ]
     
+    #Add gene names. Will be longer than th eone from org.Hs.eg.db. 
+    gn = read.csv("GeneAnn.txt",sep='\t',header=FALSE)
+    colnames(gn)=c("ID","SYMBOL")
+    dfAnn=unique((merge(gn,df,by="ID",all.y=TRUE)))
+    write.table(dfAnn,paste("out/",f,"/Differential_expression_analysis_table.GeneName.csv",sep=""),sep = '\t',row.names = FALSE)
     
+
     
     # we want the log2 fold change 
     original_gene_list <- df$log2FoldChange
@@ -62,7 +68,7 @@ for (i in 1:length(linn)){
     # sort the list in decreasing order (required for clusterProfiler)
     gene_list = sort(gene_list, decreasing = TRUE)
     
-    write.table(df2,paste("out/",f,"/Differential_expression_analysis_table.GeneName.csv",sep=""),sep = '\t',row.names = FALSE)
+    
 
     
     
