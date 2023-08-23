@@ -26,6 +26,12 @@ df = read.csv(paste(f,"/Differential_expression_analysis_table.csv",sep=""), hea
 #Subset sig
 #df=df[ which(df$pvalue <= 0.05), ]
 
+#Add gene names. Will be longer than th eone from org.Hs.eg.db. 
+gn = read.csv("GeneAnn.txt",sep='\t',header=FALSE)
+colnames(gn)=c("ID","SYMBOL")
+dfAnn=unique((merge(gn,df,by="ID",all.y=TRUE)))
+write.table(dfAnn,paste("out/",f,"/Differential_expression_analysis_table.GeneName.csv",sep=""),sep = '\t',row.names = FALSE)
+
 
 
 # we want the log2 fold change 
@@ -59,8 +65,6 @@ gene_list<-na.omit(gene_list)
 
 # sort the list in decreasing order (required for clusterProfiler)
 gene_list = sort(gene_list, decreasing = TRUE)
-
-write.table(df2,paste("out/",f,"/Differential_expression_analysis_table.GeneName.csv",sep=""),sep = '\t',row.names = FALSE)
 
 
 
